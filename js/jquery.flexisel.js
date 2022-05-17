@@ -1,13 +1,4 @@
-/*
-* File: jquery.flexisel.js
-* Version: 1.0.0
-* Description: Responsive carousel jQuery plugin
-* Author: 9bit Studios
-* Copyright 2012, 9bit Studios
-* http://www.9bitstudios.com
-* Free to use and abuse under the MIT license.
-* http://www.opensource.org/licenses/mit-license.php
-*/
+
 
 (function ($) {
 
@@ -62,9 +53,7 @@
 				});
 			},
 
-			/******************************
-			Initialize Items
-			*******************************/			
+						
 			
 			initializeItems: function() {
 				
@@ -85,9 +74,7 @@
 			},
 			
 			
-			/******************************
-			Append HTML
-			*******************************/			
+					
 			
 			appendHTML: function() {
 				
@@ -108,9 +95,8 @@
 			},
 					
 			
-			/******************************
-			Set Event Handlers
-			*******************************/
+			
+			
 			setEventHandlers: function() {
 				
 				var listParent = object.parent();
@@ -166,9 +152,7 @@
 				
 			},
 			
-			/******************************
-			Set Responsive Events
-			*******************************/			
+					
 			
 			setResponsiveEvents: function() {
 				var contentWidth = $('html').width();
@@ -189,9 +173,7 @@
 				}
 			},			
 			
-			/******************************
-			Scroll Left
-			*******************************/				
+						
 			
 			scrollLeft:function() {
 
@@ -222,9 +204,7 @@
 				}
 			},
 			
-			/******************************
-			Scroll Right
-			*******************************/				
+						
 			
 			scrollRight:function() {
 				
@@ -246,7 +226,7 @@
 							duration:settings.animationSpeed,
 							easing: "linear",
 							complete: function() {  
-								childSet.first().insertAfter(childSet.last()); // Get the first list item and put it after the last list item (that's how the infinite effects is made)   
+								childSet.first().insertAfter(childSet.last()); 
 								methods.adjustScroll();
 								canNavigate = true; 
 							}
